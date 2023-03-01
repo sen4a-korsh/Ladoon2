@@ -13,7 +13,7 @@ $(document).ready(function (){
         const password_confirmation = $.trim($('input[name="password_confirmation"]').val());
 
         if(email === '' || password === '' || first_name === '' || last_name === ''){
-            $('#error').html('Заполните все поля!');
+            $('#error').html('Fill in all fields!');
         }else{
             $.ajaxSetup({
                 headers: {
