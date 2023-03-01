@@ -3,9 +3,6 @@ $(document).ready(function (){
     $("#registerFrom").submit( function (e){
         e.preventDefault()
 
-        // const data =  $("#registerFrom").serializeArray();
-
-
         const first_name = $.trim($('input[name="first_name"]').val());
         const last_name = $.trim($('input[name="last_name"]').val());
         const email = $.trim($('input[name="email"]').val());
@@ -25,7 +22,6 @@ $(document).ready(function (){
                 url: $(this).attr('action'),
                 type: 'POST',
                 dataType: 'text',
-                // data: data,
                 data: {
                     first_name: first_name,
                     last_name: last_name,
